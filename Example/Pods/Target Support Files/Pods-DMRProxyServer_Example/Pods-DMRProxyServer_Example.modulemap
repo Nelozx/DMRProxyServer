@@ -1,0 +1,6 @@
+framework module Pods_DMRProxyServer_Example {
+  umbrella header "Pods-DMRProxyServer_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

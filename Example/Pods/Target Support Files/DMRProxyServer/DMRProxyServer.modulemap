@@ -1,0 +1,6 @@
+framework module DMRProxyServer {
+  umbrella header "DMRProxyServer-umbrella.h"
+
+  export *
+  module * { export * }
+}

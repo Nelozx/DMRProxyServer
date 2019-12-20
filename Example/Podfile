@@ -5,6 +5,7 @@ target 'DMRProxyServer_Example' do
 
   target 'DMRProxyServer_Tests' do
     inherit! :search_paths
+    inhibit_all_warnings!
 
     pod 'Quick', '~> 1.2.0'
     pod 'Nimble', '~> 7.0'
