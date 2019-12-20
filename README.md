@@ -20,9 +20,6 @@ it, simply add the following line to your Podfile:
 pod 'DMRProxyServer'
 ```
 
-## Author
-
-alistz, nelozx@outlook.com
 
 ## License
 

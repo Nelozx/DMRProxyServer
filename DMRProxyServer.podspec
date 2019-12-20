@@ -36,6 +36,7 @@ This description is used to generate tags and improve search results.
   #   'DMRProxyServer' => ['DMRProxyServer/Assets/*.png']
   # }
 
+  s.swift_version = '5.0'
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
