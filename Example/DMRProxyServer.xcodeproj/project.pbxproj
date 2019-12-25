@@ -11,10 +11,10 @@
 		424856342858B8AD2D2A51A1 /* Pods_DMRProxyServer_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE223D25020605F6E373DED8 /* Pods_DMRProxyServer_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		C6651ABE23B2FD1F00B27773 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6651ABD23B2FD1F00B27773 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +34,6 @@
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* DMRProxyServer_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMRProxyServer_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +43,7 @@
 		98B8897403E7E4C6739E0DAF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		99A4D6B76B78B14C69F6D5C6 /* Pods-DMRProxyServer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMRProxyServer_Example.release.xcconfig"; path = "Target Support Files/Pods-DMRProxyServer_Example/Pods-DMRProxyServer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9C67ACDE8A17BA300778FB77 /* Pods_DMRProxyServer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMRProxyServer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6651ABD23B2FD1F00B27773 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E6D1F7356E286E8B8AC4F464 /* Pods-DMRProxyServer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMRProxyServer_Example.debug.xcconfig"; path = "Target Support Files/Pods-DMRProxyServer_Example/Pods-DMRProxyServer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EB0DD03DB34146C6FD119FB9 /* Pods-DMRProxyServer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMRProxyServer_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DMRProxyServer_Tests/Pods-DMRProxyServer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FE223D25020605F6E373DED8 /* Pods_DMRProxyServer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMRProxyServer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,8 +106,8 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				C6651ABD23B2FD1F00B27773 /* Main.storyboard */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -247,7 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				C6651ABE23B2FD1F00B27773 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -380,14 +380,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
