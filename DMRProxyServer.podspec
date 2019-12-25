@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-This description is used to generate tags and improve search results.
+  This description is used to generate tags and improve search results.
                        DESC
 
   s.homepage         = 'https://github.com/nelozx/DMRProxyServer'

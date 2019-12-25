@@ -12,6 +12,7 @@ import UIKit
 fileprivate let LinkTest = "https://www.baidu.com/"
 
 class AliveAgent: NSObject {
+    
     class func alive(_ ip: String, _ port: Int, type: ProxyPoolType) -> Bool {
         // 使用信号量实现NSURLSession同步请求
         let semaphore = DispatchSemaphore(value: 0)
@@ -24,6 +25,7 @@ class AliveAgent: NSObject {
             guard let res = res else {
                 return
             }
+            
             let response = res as! HTTPURLResponse
             result = (response.statusCode == 200) ? true : false
             semaphore.signal()
