@@ -8,22 +8,31 @@
 
 import UIKit
 
+public func pprint(_ message: String,
+         function: String = #function,
+         file: String = #file,
+         line: Int = #line) {
+    print("MSG[\(line)]:\"\(message)\" (File: \(file), Function:\(function)")
+}
 
-enum ProxyPoolType: String {
+
+
+public enum ProxyServerType: String {
     case http = "HTTP"
     case https = "HTTPS"
     case socks = "SOCKS"
 }
 
-class ProxyPool: NSObject {
+
+open class ProxyServer: NSObject {
     private var enableKey, proxyKey, portKey: String?
     private(set) var host: String?
     private(set) var port: Int?
-    private(set) var type: ProxyPoolType?
+    private(set) var type: ProxyServerType?
     private(set) var pool: [String: Any]?
     
-    init(_ host: String, _ port: Int, type: ProxyPoolType) {
-        print("[ProxyPool]:\(host):\(port) ====>\(type)")
+    init(_ host: String, _ port: Int, type: ProxyServerType) {
+        pprint("\(host):\(port) ====>\(type)")
         super.init()
         self.host = host; self.port = port; self.type = type
         configKey(type)
@@ -33,7 +42,7 @@ class ProxyPool: NSObject {
             portKey! : port,
         ]
     }
-    private func configKey(_ type: ProxyPoolType) {
+    private func configKey(_ type: ProxyServerType) {
         switch type {
         case .http:
             enableKey = "HTTPEnable"
@@ -57,8 +66,8 @@ class ProxyPool: NSObject {
 
 
 extension URLSessionConfiguration{
-    class func proxy(_ ip: String,_ port: Int, _ type: ProxyPoolType = .socks) -> URLSessionConfiguration{
-        let proxyPool = ProxyPool(ip, port, type: type)
+    open class func proxy(_ ip: String,_ port: Int, _ type: ProxyServerType = .socks) -> URLSessionConfiguration{
+        let proxyPool = ProxyServer(ip, port, type: type)
         let config = URLSessionConfiguration.default
         config.connectionProxyDictionary = proxyPool.pool
         return config

@@ -13,7 +13,7 @@ fileprivate let LinkTest = "https://www.baidu.com/"
 
 class AliveAgent: NSObject {
     
-    class func alive(_ ip: String, _ port: Int, type: ProxyPoolType) -> Bool {
+    class func alive(_ ip: String, _ port: Int, type: ProxyServerType) -> Bool {
         // 使用信号量实现NSURLSession同步请求
         let semaphore = DispatchSemaphore(value: 0)
         var result = false

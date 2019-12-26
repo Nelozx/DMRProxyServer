@@ -1,7 +1,11 @@
 {
   "name": "DMRProxyServer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": "DMRProxyServer is a lib for the Proxy Server",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "swift_versions": "5.0",
   "description": "This description is used to generate tags and improve search results.",
   "homepage": "https://github.com/nelozx/DMRProxyServer",
   "license": {
@@ -12,13 +16,9 @@
     "NELO": "nelozx@outlook.com"
   },
   "source": {
-    "git": "https://github.com/alistz/DMRProxyServer.git",
-    "tag": "0.0.1"
-  },
-  "platforms": {
-    "ios": "8.0"
+    "git": "https://github.com/nelozx/DMRProxyServer.git",
+    "tag": "0.0.2"
   },
   "source_files": "DMRProxyServer/Classes/**/*",
-  "swift_versions": "5.0",
   "swift_version": "5.0"
 }

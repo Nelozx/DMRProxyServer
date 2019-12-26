@@ -1,10 +1,10 @@
-source 'https://github.com/CocoaPods/Specs.git'
-
+#source 'https://github.com/CocoaPods/Specs.git'
+#source 'https://github.com/CocoaPods/Specs.git'
 
 use_frameworks!
 
 target 'DMRProxyServer_Example' do
-#  pod 'Alamofire'
+  pod 'Alamofire'
   pod 'DMRProxyServer', :path => '../'
 
 

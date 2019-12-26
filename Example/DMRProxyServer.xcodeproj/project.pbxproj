@@ -170,7 +170,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				DC79A2B3D1E3E7EEB0E0A4FC /* [CP] Embed Pods Frameworks */,
+				BD5ED07570E5F1DB3D0A4DF8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -287,17 +287,19 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DMRProxyServer_Tests/Pods-DMRProxyServer_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DC79A2B3D1E3E7EEB0E0A4FC /* [CP] Embed Pods Frameworks */ = {
+		BD5ED07570E5F1DB3D0A4DF8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DMRProxyServer_Example/Pods-DMRProxyServer_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DMRProxyServer/DMRProxyServer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DMRProxyServer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
